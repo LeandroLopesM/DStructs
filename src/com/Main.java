@@ -1,9 +1,12 @@
 package com;
 
-
-
-public class Main {	
+public class Main {
+	
+	public Main() {
+		
+	}
+	
 	public static void main( String...args ) {
-		new TestStack(null);
+		new Main();
 	}
 }
