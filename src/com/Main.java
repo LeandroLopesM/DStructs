@@ -1,15 +1,17 @@
 package com;
 
 import com.stack.Stack;
-import com.utils.Structs;
 
 public class Main {
 	
 	public Main() {
-		Stack s = new Stack(50);
-		s.push(1).push(2).push(3).push(4);
+		Stack s = new Stack();
 		
-		System.out.println( Structs.format(s) );
+		s.push(1).push(2).push(3).push(4).push(5).push(6);
+		
+		
+		
+		System.out.println( s + "  SIZE: " + s.size() );
 	}
 	
 	public static void main( String...args ) {

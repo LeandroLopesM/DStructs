@@ -14,10 +14,7 @@ public class Structs {
 			ret += "|%-3.3s%s%-3.3s|\n".formatted( " ", o, " " );
 		}
 		
-		
-		
 		return ret;
-		
 	}
 	
 		public void populate( Stack s, int[] range ) {

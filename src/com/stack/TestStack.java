@@ -1,8 +1,10 @@
 package com.stack;
 
+import com.utils.UnexpectedValueException;
+
 final public class TestStack {
 	
-	public TestStack(String in) {
+	public TestStack(String in) throws UnexpectedValueException {
 //		String polistNote = "5 6 + 9 - 10 +"; // ((5 + 6) - 9) + 10 = 12;
 //		String polishNote = "9 3 * 2 + 10 - 1 - 2 /"; // ((((9 * 3) + 2) - 10) - 1) /2
 		String polishNote = "5 10 * 2 / 13 - 8 *"; // (((5 * 10) / 2) - 13) * 8 = 96;
