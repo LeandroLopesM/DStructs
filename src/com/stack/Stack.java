@@ -12,11 +12,15 @@ public class Stack {
 		MAX = maxSize;		
 	}
 	
-	public void push( Object val ) throws StackOverflowError{
+	// OPERATORS
+	
+	public Stack push( Object val ) throws StackOverflowError{
 		if( sPtr == MAX ) throw new StackOverflowError("Stack is full");
 		
 		sStruct[sPtr] = val;
 		sPtr++;
+		
+		return this; // Chainable
 	}
 	
 	public Object pop() throws StackUnderflowError {
@@ -31,7 +35,31 @@ public class Stack {
 	
 	public Object top() { return sStruct[sPtr-1]; }
 	
+	//EXTRA
+	
 	public boolean isEmpty() { return sPtr == 0; }
 	public boolean isFull() { return sPtr == MAX; }
 	public int size() { return sPtr; }
+	
+	//	UTILS
+	
+	@Override
+	public String toString() {
+		String r = this.getClass().getSimpleName() + " = [  ";
+		
+		for (int i = 0; i != sStruct.length; i++) {
+			r += i + ":[ " + sStruct[i] + " ]";
+			if(!( i + 1  == sStruct.length )) {
+				r += ",  ";
+			}
+		}
+		
+		r += "  ];";
+		
+		return r;
+	}
+	
+	public Object[] toArray() {
+		return sStruct;
+	}
 }

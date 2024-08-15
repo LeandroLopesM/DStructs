@@ -57,11 +57,7 @@ public class Queue {
 		r += "  ];";
 		
 		return r;
-	}
-	
-	
-	
-	
+	}	
 	
 	// WRAPPERS
 	public Object deQ() { return  dequeue();    }
