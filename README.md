@@ -1,10 +1,11 @@
 # DStruct
---
+
 Tiny java project i made to better understand the inner workings of data structures. Implemented so far are:
 - [ ] Queue
 - - [x] LIFO (Last in First out)
 - - [ ] FILO
 - [x] Stack
+- - [x] Linear dynamic expansion
 - [ ] Tree
 - - [ ] Binary Search
 - [ ] Linked list
